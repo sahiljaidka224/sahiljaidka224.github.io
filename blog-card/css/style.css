@@ -1,0 +1,101 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #f9fAfB, #d2d6db);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 504px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 288px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-card__info {
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #ffffff;
+  padding: 24px 16px;
+  height: 100%;
+  gap: 8px;
+}
+
+.blog-card__info__tag {
+  border: 1px solid #bbf780;
+  background-color: #f0fdf4;
+  border-radius: 9999px;
+  padding: 2px 8px; 
+  color:#15803d;
+  text-align: center;
+  max-width: max-content;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.blog-card__info__heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #171717;
+}
+
+.blog-card__info__quote {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525252;
+}
+
+.blog-card__info__readmore {
+  color: #4338CA;
+  padding: 0 2px;
+  font-weight: 500;
+  justify-content: center;
+  cursor: pointer;
+}
